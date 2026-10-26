@@ -1,12 +1,12 @@
-# MARS Cosmetics — Order & Inventory Sync Service
+# D2C — Order & Inventory Sync Service
 
-Design documentation for a centralized service that stops MARS Cosmetics from overselling stock across its sales channels.
+Design documentation for a centralized service that stops D2C from overselling stock across its sales channels.
 
 > **Status:** Design only. This repository contains the problem statement and high-level design (HLD). There is no implementation code yet.
 
 ## The problem
 
-MARS Cosmetics sells about 1,200 SKUs on its own website, Nykaa, Flipkart, and Blinkit, all fulfilled from one central warehouse. Each channel gets stock updates manually twice a day, so every channel works from stale numbers.
+D2C sells about 1,200 SKUs on its own website, Nykaa, Flipkart, and Blinkit, all fulfilled from one central warehouse. Each channel gets stock updates manually twice a day, so every channel works from stale numbers.
 
 Example: the warehouse holds 10 units. The website takes an order for 7 and Nykaa takes an order for 5 at almost the same moment. That is 12 units promised against 10 in stock, which means overselling, cancellations, and poor marketplace ratings.
 
@@ -28,7 +28,7 @@ There is nothing to build or run yet. The repo is documentation only, so setup m
 1. Clone the repository and enter it:
    ```bash
    git clone <repo-url>
-   cd "mars cosmetic"
+   cd d2c-order-inventory-sync
    ```
 2. Read [design.md](./design.md) in any Markdown viewer (GitHub, VS Code preview, etc.). It references the images in [images/](./images), so keep the folder structure intact.
 3. Start with the [approach](#approach) below for the short version, then follow the section pointers under [Where to look in design.md](#where-to-look-in-designmd).

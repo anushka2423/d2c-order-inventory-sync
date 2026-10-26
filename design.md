@@ -1,4 +1,4 @@
-# MARS Cosmetics — Order & Inventory Sync Service
+# D2C — Order & Inventory Sync Service
 
 > **AI Reference:** The core idea, problem analysis, and HLD are my own. I used ChatGPT to structure my explanation and turn my HLD into this Markdown document. AI assistance was used for wording and documentation, not to originate my overall design idea.
 
@@ -6,7 +6,7 @@
 
 ![problem_statement](./images/problem_statement.png)
 
-MARS Cosmetics sells approximately 1,200 SKUs across its own website, Nykaa, Flipkart, and Blinkit. All orders are fulfilled from one central warehouse, but each channel currently receives stock updates manually twice a day.
+D2C sells approximately 1,200 SKUs across its own website, Nykaa, Flipkart, and Blinkit. All orders are fulfilled from one central warehouse, but each channel currently receives stock updates manually twice a day.
 
 Since each channel may have outdated inventory information, multiple channels can accept orders for stock that is no longer available. This can lead to overselling, cancellations, and poor marketplace ratings.
 
